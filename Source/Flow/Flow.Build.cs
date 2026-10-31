@@ -38,6 +38,6 @@ public class Flow : ModuleRules
 			]);
 		}
 
-		SetupIrisSupport(target);
+		//SetupIrisSupport(target);
 	}
 }
