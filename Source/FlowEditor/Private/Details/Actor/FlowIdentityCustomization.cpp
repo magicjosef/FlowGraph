@@ -1076,7 +1076,7 @@ bool FFlowIdentityCustomization::CanOpenMatchingPopup()
 		// Avoids triggering ensure in UEditorEngine::ToggleBetweenPIE and SIE for PlayInNewWindow mode
 		for (const FWorldContext& WorldContext : GEditor->GetWorldContexts())
 		{
-			if (WorldContext.WorldType == EWorldType::PIE && !WorldContext.RunAsDedicated)
+			if (WorldContext.WorldType == EWorldType::PIE)
 			{
 				const FSlatePlayInEditorInfo* SlatePlayInEditorInfo = GEditor->SlatePlayInEditorMap.Find(WorldContext.ContextHandle);
 				return SlatePlayInEditorInfo && SlatePlayInEditorInfo->DestinationSlateViewport.IsValid();

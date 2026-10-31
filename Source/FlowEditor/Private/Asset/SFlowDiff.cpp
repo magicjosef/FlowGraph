@@ -147,7 +147,6 @@ void FFlowDiffPanel::GeneratePanel(UEdGraph* Graph, TSharedPtr<TArray<FDiffSingl
 		const TSharedRef<SGraphEditor> Editor = SNew(SGraphEditor)
 			.AdditionalCommands(GraphEditorCommands)
 			.GraphToEdit(Graph)
-			.GraphToDiff(nullptr)
 			.DiffResults(DiffResults)
 			.FocusedDiffResult(FocusedDiffResult)
 			.IsEditable(false)
